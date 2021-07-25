@@ -3,9 +3,9 @@ import { checkDayLight, weatherConditions, locationDetails } from "./ui.js";
 // change the api key if the request limit is reached
 const apiKey = "D5W4u1XUoMM5tML5uAGO6RowKtPdXzKf";
 const searchCity = document.querySelector("form input");
-const searchBtn = document.querySelector("form button");
+const searchForm = document.querySelector(".container form")
 
-searchBtn.addEventListener("click", (event) => {
+searchForm.addEventListener("submit", (event) => {
   event.preventDefault();
   let cityName = searchCity.value;
   handleRequest(cityName);
