@@ -1,0 +1,98 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  background-color: #035397;
+  color: #ffaa4c;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding: 0.1rem;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 3rem auto;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 0;
+  }
+}
+
+form {
+  margin: 1.5rem 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+input {
+  width: 70%;
+  height: 2.5rem;
+  font-size: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.2rem;
+  padding: 0.2rem;
+}
+
+@media screen and (max-width: 400px) {
+  button {
+    display: none;
+  }
+}
+
+button {
+  width: 100px;
+}
+
+.weather-box {
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.box {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-icon img {
+  width: 200px;
+}
+
+.temperature-value {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.weather-text {
+  font-size: 20px;
+  margin-bottom: 2rem;
+}
+
+.location {
+  margin-bottom: 3rem;
+  letter-spacing: 1.5px;
+}
+
+.container {
+  max-width: 400px;
+}
