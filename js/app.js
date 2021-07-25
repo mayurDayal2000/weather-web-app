@@ -19,7 +19,7 @@ const handleRequest = (name) => {
   let getCityData = async () => {
     try {
       let response = await fetch(
-        `http://dataservice.accuweather.com/locations/v1/cities/search?apikey=${apiKey}&q=${name}`,
+        `https://dataservice.accuweather.com/locations/v1/cities/search?apikey=${apiKey}&q=${name}`,
         { cache: "no-cache" }
       );
       if (response.ok) {
@@ -43,7 +43,7 @@ const handleRequest = (name) => {
   let getCurrentData = async (locationKey) => {
     try {
       let currentResponse = await fetch(
-        `http://dataservice.accuweather.com/currentconditions/v1/${locationKey}?apikey=${apiKey}`,
+        `https://dataservice.accuweather.com/currentconditions/v1/${locationKey}?apikey=${apiKey}`,
         { cache: "no-cache" }
       );
       if (currentResponse.ok) {
